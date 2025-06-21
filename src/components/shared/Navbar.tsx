@@ -1,18 +1,21 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import { categoryLinks } from '@/constant/product.data';
 
 export default function Navbar() {
+
     const [isOpen, setIsOpen] = useState(false);
     const navLinks = [
         { name: 'Home', href: '/' },
-        { name: 'Our Services', href: '/services' },
         { name: 'Our Products', href: '/products' },
+        { name: 'Our Services', href: '/services' },
         { name: 'Contact', href: '/contact' },
         { name: 'About', href: '/about' }
     ]
+
     return (
-        <nav className=" bg-white shadow-lg py-4 px-4 md:px-0 md:py-0 fixed top-0 w-full z-10  dark:bg-gray-800">
+        <nav className=" bg-white shadow-lg py-4 px-4 md:px-0 md:py-0 fixed top-0 w-full z-20  dark:bg-gray-800">
             <div className="container  mx-auto md:flex md:justify-between md:items-center">
                 <div className="flex items-center justify-between">
                     <Link href="/">
@@ -58,18 +61,48 @@ export default function Navbar() {
                     className={`${isOpen
                         ? 'translate-x-0 opacity-100'
                         : 'opacity-0 -translate-x-full'
-                        } absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center`}
+                        } absolute inset-x-0 z-20 w-full px-6 py-4 transition-all  duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center`}
                 >
                     {
                         navLinks.map((link) => (
-                            <Link
-                                key={link.name}
-                                href={link.href}
-                                className="block px-3 py-2 md:py-5  text-gray-700 transition-colors font-medium duration-300 transform dark:text-gray-200 hover:text-blue-500 hover:text-white hover:bg-primary dark:hover:text-blue-400 md:mx-2 md:my-0"
-                                onClick={() => setIsOpen(false)}
-                            >
-                                {link.name}
-                            </Link>
+                            <div key={link.name} className="relative group md:mx-2 md:my-0">
+                                <Link
+                                    key={link.name}
+                                    href={link.href}
+                                    className={`block px-3 py-2 md:py-5  text-gray-700 transition-colors font-medium duration-300 transform dark:text-gray-200 hover:text-blue-500 hover:text-white hover:bg-primary dark:hover:text-blue-400 md:mx-2 md:my-0`}
+                                    onClick={() => setIsOpen(false)}
+                                >
+                                    {link.name}
+                                </Link>
+                                {
+                                    link.name === 'Our Products' &&
+                                    <div className="absolute top-full -left-[850px]  hidden py-5 group-hover:flex gap-6 lg:min-w-[1200px] xl:min-w-[1430px]  flex justify-center    bg-[#204D77] text-white shadow-xl z-40 animate-fade-in py-4">
+                                        <div className='max-w-2xl  flex gap-12 item-center'>
+                                            <div className='flex-1 flex  items-center jestify-end'>
+                                                <h1 className='text-2xl leading-relaxed '>Serving dynamic business needs with innovative and on-trend products</h1>
+                                            </div>
+
+                                            <ul className="flex-1 pl-10 border-l border-gray-400">
+                                                {/* Dropdown items */}
+                                                {
+                                                    categoryLinks.map((item) => (
+                                                        <li key={item.name} className="mb-2">
+                                                            <Link
+                                                                href={`/products#${item.name}`}
+                                                                className="block px-4 py-2 hover:bg-white hover:text-primary transition duration-300"
+                                                            >
+                                                                {item.name}
+                                                            </Link>
+                                                        </li>
+                                                    ))
+                                                }
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+
                         ))
                     }
 
