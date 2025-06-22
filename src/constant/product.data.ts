@@ -354,4 +354,5 @@ export const categoryLinks = [
   { name: "MEN" },
   { name: "KIDS" },
   { name: "HOME" },
+  { name: "HEADWEAR" },
 ];

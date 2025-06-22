@@ -65,18 +65,18 @@ export default function Navbar() {
                 >
                     {
                         navLinks.map((link) => (
-                            <div key={link.name} className="relative group md:mx-2 md:my-0">
+                            <div key={link.name} className="relative px-3 py-3   group ">
                                 <Link
                                     key={link.name}
                                     href={link.href}
-                                    className={`block px-3 py-2 md:py-5  text-gray-700 transition-colors font-medium duration-300 transform dark:text-gray-200 hover:text-blue-500 hover:text-white hover:bg-primary dark:hover:text-blue-400 md:mx-2 md:my-0`}
+                                    className={`block  text-gray-700 transition-colors font-medium duration-300 px-2 py-2 transform dark:text-gray-200  hover:text-white hover:bg-primary dark:hover:text-blue-400 `}
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {link.name}
                                 </Link>
                                 {
                                     link.name === 'Our Products' &&
-                                    <div className="absolute top-full -left-[850px]  hidden py-5 group-hover:flex gap-6 lg:min-w-[1200px] xl:min-w-[1430px]  flex justify-center    bg-[#204D77] text-white shadow-xl z-40 animate-fade-in py-4">
+                                    <div className="absolute top-full -left-[910px]  hidden  group-hover:flex gap-6 lg:min-w-[1200px] xl:min-w-[1430px]   justify-center    bg-[#204D77] text-white shadow-xl z-40 animate-fade-in py-4">
                                         <div className='max-w-2xl  flex gap-12 item-center'>
                                             <div className='flex-1 flex  items-center jestify-end'>
                                                 <h1 className='text-2xl leading-relaxed '>Serving dynamic business needs with innovative and on-trend products</h1>
@@ -108,6 +108,11 @@ export default function Navbar() {
 
 
 
+                </div>
+            </div>
+            <div className='bg-black'>
+                <div className='container  mx-auto flex justify-end text-white   '>
+                    <h1 className='uppercase py-2 px-2 rounded-full cursor-pointer font-semibold hover:bg-yellow-100/10'>Terms of Website use</h1>
                 </div>
             </div>
         </nav>
