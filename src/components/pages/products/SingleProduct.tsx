@@ -3,7 +3,7 @@ import { IProduct } from '@/constant/product.data'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-
+import { motion } from 'motion/react'
 export default function SingleProduct({ product }: { product: IProduct }) {
     return (
         <div id={product.title} className="container   mx-auto bg-white/60 py-8">
@@ -18,9 +18,9 @@ export default function SingleProduct({ product }: { product: IProduct }) {
 
 
                 <div className='relative p-4'>
-                    <div className="h-[270px] -translate-y-40 bg-[#024770] flex items-center justify-center">
+                    <motion.div initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="h-[270px] -translate-y-40 bg-[#024770] flex items-center justify-center">
                         <h2 className="text-white/90 text-2xl">{product.title}</h2>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="lg:col-span-3 grid md:grid-cols-3 gap-8">
 

@@ -6,9 +6,11 @@ import { IoIosArrowForward } from "react-icons/io";
 import { categoryLinks, products } from "@/constant/product.data";
 import SingleProduct from "@/components/pages/products/SingleProduct";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 export default function ProductsPage() {
     const [active, setActive] = useState('WOMEN');
-
+    const pathname = usePathname()
+    console.log('Current Pathname:', pathname);
     return (
         <div className="min-h-screen relative ">
             {/* Hero Section */}

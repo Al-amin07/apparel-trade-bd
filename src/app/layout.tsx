@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import AnimationProvider from "@/components/provider/AnimationProvider";
 // import { NavigationMenuDemo } from "@/components/shared/NavigationMenu";
 
 const geistSans = Geist({
@@ -32,9 +33,11 @@ export default function RootLayout({
       >
         <Navbar />
 
-        <main className="mt-16 ">
-          {children}
-        </main>
+        <AnimationProvider>
+          <main className="mt-16 ">
+            {children}
+          </main>
+        </AnimationProvider>
         <Footer />
       </body>
     </html>
