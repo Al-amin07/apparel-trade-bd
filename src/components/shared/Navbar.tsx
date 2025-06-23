@@ -2,7 +2,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { categoryLinks } from '@/constant/product.data';
-
+import logo from '@/assets/logo.jpg'
+import Image from 'next/image';
 export default function Navbar() {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -18,8 +19,8 @@ export default function Navbar() {
         <nav className=" bg-white shadow-lg py-4 px-4 md:px-0 md:py-0 fixed top-0 w-full z-20  dark:bg-gray-800">
             <div className="container  mx-auto md:flex md:justify-between md:items-center">
                 <div className="flex items-center justify-between">
-                    <Link href="/">
-                        <h1 className='text-xl font-semibold uppercase'>Apparel Trade BD.</h1>                    </Link>
+                    <Link href="/" className=''>
+                        <Image src={logo} alt="logo" width={100} height={150} className='relative z-30 top-5 border-4 border-black' />                  </Link>
 
                     {/* Mobile menu button */}
                     <div className="flex lg:hidden">
@@ -110,9 +111,8 @@ export default function Navbar() {
 
                 </div>
             </div>
-            <div className='bg-black'>
+            <div className='bg-black py-5'>
                 <div className='container  mx-auto flex justify-end text-white   '>
-                    <h1 className='uppercase py-2 px-2 rounded-full cursor-pointer font-semibold hover:bg-yellow-100/10'>Terms of Website use</h1>
                 </div>
             </div>
         </nav>

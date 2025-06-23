@@ -131,7 +131,7 @@ export default function OurServices() {
 
                     <div className="grid lg:grid-cols-2  items-center">
                         {/* Contact Form */}
-                        <div data-aos="fade-up" className="bg-[#E3F2FD] p-8 rounded-lg">
+                        <div data-aos="fade-right" className="bg-[#E3F2FD] p-8 rounded-lg">
                             <form className="space-y-6">
                                 <div>
                                     <Label htmlFor="name" className="text-sm font-medium text-gray-700">
@@ -163,7 +163,7 @@ export default function OurServices() {
                         </div>
 
                         {/* Image */}
-                        <div data-aos="fade-up" className="">
+                        <div data-aos="fade-left" className="">
                             <Image
                                 src={img7}
                                 alt="Colorful clothing rack"
