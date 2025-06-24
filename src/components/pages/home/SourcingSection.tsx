@@ -9,9 +9,9 @@ export default function SourcingSection() {
         { title: "End-to-End Solutions", description: "Comprehensive sourcing for apparel, accessories, and home goods tailored to your brand’s needs.", image: img3 }
     ]
     return (
-        <section className="max-w-6xl mx-auto  bg-white">
+        <section className="max-w-6xl mx-auto px-5 lg:px-0  bg-white">
             {/* Top Section */}
-            <div className="flex justify-between ">
+            <div className="flex flex-col md:flex-row justify-between ">
                 <div className='flex-1'>
                     <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 leading-relaxed">
                         Your Premier <br /> Sourcing Partner
@@ -20,10 +20,10 @@ export default function SourcingSection() {
 
                 </div>
                 <div className="flex-1">
-                    <p className=" text-gray-600 w-2/3 ">
+                    <p className=" text-gray-600 w-full md:w-2/3 ">
                         Bridging the gap between global brands and reliable suppliers in fashion, accessories, and home goods.
                     </p>
-                    <div className='flex gap-8 md:gap-12 mt-12 gap-6'>
+                    <div className='flex  md:gap-12 mt-12 gap-6'>
                         <div>
                             <p className="text-4xl font-semibold text-primary">150+</p>
                             <p className="text-gray-700">Trusted Partnerships</p>

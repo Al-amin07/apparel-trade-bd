@@ -63,7 +63,7 @@ export default function OurServices() {
                                 alt="Clothing rack with hangers"
                                 width={250}
                                 height={300}
-                                className="rounded-lg  object-cover w-full"
+                                className="rounded-lg  object-cover h-64 md:h-full w-full"
                             />
                         </div>
                         <div data-aos="fade-up">
@@ -72,7 +72,7 @@ export default function OurServices() {
                                 alt="Woman in floral dress"
                                 width={250}
                                 height={280}
-                                className="rounded-lg object-cover w-full"
+                                className="rounded-lg object-cover h-64 md:h-full w-full"
                             />
                         </div>
 
@@ -131,7 +131,7 @@ export default function OurServices() {
 
                     <div className="grid lg:grid-cols-2  items-center">
                         {/* Contact Form */}
-                        <div data-aos="fade-right" className="bg-[#E3F2FD] p-8 rounded-lg">
+                        <div className="bg-[#E3F2FD] p-8 rounded-lg">
                             <form className="space-y-6">
                                 <div>
                                     <Label htmlFor="name" className="text-sm font-medium text-gray-700">
@@ -163,7 +163,7 @@ export default function OurServices() {
                         </div>
 
                         {/* Image */}
-                        <div data-aos="fade-left" className="">
+                        <div className="">
                             <Image
                                 src={img7}
                                 alt="Colorful clothing rack"

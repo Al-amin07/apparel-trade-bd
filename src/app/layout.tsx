@@ -34,7 +34,7 @@ export default function RootLayout({
         <Navbar />
 
         <AnimationProvider>
-          <main className="mt-16 ">
+          <main className="mt-24 ">
             {children}
           </main>
         </AnimationProvider>

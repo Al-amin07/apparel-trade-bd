@@ -6,7 +6,7 @@ import img4 from '@/assets/New folder/4.avif'
 import img5 from '@/assets/New folder/5.avif'
 export default function AboutPage() {
     return (
-        <div className="max-w-7xl mx-auto px-4 py-10">
+        <div className="max-w-7xl  mx-auto px-4 py-10">
             {/* Hero Section */}
             <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div data-aos="fade-up">
