@@ -174,23 +174,25 @@ export default function Navbar() {
                                 </div> */}
 
                                 {/* Style 3 */}
-                                <div className="absolute top-full -left-[24%]  -translate-x-1/2 hidden group-hover:flex gap-6 min-w-screen justify-center bg-[#204D77] text-white shadow-xl z-40 animate-fade-in py-16 px-12">
-                                    <h2 className="text-xl font-bold mb-4 text-center leading-relaxed">
-                                        Serving dynamic business needs with <br /> innovative and on-trend products
-                                    </h2>
-                                    <ul className="space-y-2">
-                                        {categoryLinks.map((item) => (
-                                            <li key={item.name}>
-                                                <Link
-                                                    href={`/products#${item.name}`}
-                                                    className="block px-4 py-2 hover:bg-white hover:text-primary transition rounded "
-                                                >
-                                                    {item.name}
-                                                </Link>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
+                                {
+                                    link.name === 'Products' && <div className="absolute top-full -left-[24%]  -translate-x-1/2 hidden group-hover:flex gap-6 min-w-screen justify-center bg-[#204D77] text-white shadow-xl z-40 animate-fade-in py-16 px-12">
+                                        <h2 className="text-xl font-bold mb-4 text-center leading-relaxed">
+                                            Serving dynamic business needs with <br /> innovative and on-trend products
+                                        </h2>
+                                        <ul className="space-y-2">
+                                            {categoryLinks.map((item) => (
+                                                <li key={item.name}>
+                                                    <Link
+                                                        href={`/products#${item.name}`}
+                                                        className="block px-4 py-2 hover:bg-white hover:text-primary transition rounded "
+                                                    >
+                                                        {item.name}
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                }
 
                                 {/* Style 4 */}
                                 {/* <div className="absolute top-full -left-[24%]  -translate-x-1/2 hidden group-hover:flex gap-6 min-w-screen justify-center bg-[#204D77] text-white shadow-xl z-40 animate-fade-in py-16 px-12">
