@@ -175,7 +175,7 @@ export default function Navbar() {
 
                                 {/* Style 3 */}
                                 {
-                                    link.name === 'Products' && <div className="absolute top-full -left-[24%]  -translate-x-1/2 hidden group-hover:flex gap-6 min-w-screen justify-center bg-primary text-white shadow-xl z-40 animate-fade-in py-16 px-12">
+                                    link.name === 'Products' && <div className="absolute pl-24 top-full -left-[24%]  -translate-x-1/2 hidden group-hover:flex gap-28 min-w-screen justify-center bg-primary text-white shadow-xl z-40 animate-fade-in py-16 px-12">
                                         <h2 className="text-xl font-bold mb-4 text-center leading-relaxed">
                                             Serving dynamic business needs with <br /> innovative and on-trend products
                                         </h2>

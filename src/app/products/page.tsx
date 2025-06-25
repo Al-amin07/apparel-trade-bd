@@ -23,9 +23,9 @@ export default function ProductsPage() {
                 {/* Navigation */}
 
             </div>
-            <div className="sticky  top-30 bg-[#F1F0E9] z-10 bottom-0 left-0 right-0  ">
+            <div className="sticky shadow-md top-30 bg-[#F1F0E9] z-10 bottom-0 left-0 right-0  ">
                 <div className="container mx-auto ">
-                    <nav className="flex items-center space-x-8 py-4">
+                    <nav className="flex items-center justify-center space-x-8 py-4 ">
                         <div className="flex items-center space-x-2 text-gray-800 font-medium">
                             <span>OUR PRODUCTS</span>
                             <span className="text-gray-900"><IoIosArrowForward size={26} /></span>

@@ -9,7 +9,7 @@ export default function SourcingSection() {
         { title: "End-to-End Solutions", description: "Comprehensive sourcing for apparel, accessories, and home goods tailored to your brand’s needs.", image: img3 }
     ]
     return (
-        <section className="max-w-6xl mx-auto px-5 lg:px-0  bg-white">
+        <section className="max-w-6xl  mx-auto px-5 lg:px-0  bg-white">
             {/* Top Section */}
             <div className="flex flex-col md:flex-row justify-between ">
                 <div className='flex-1'>
@@ -58,7 +58,7 @@ export default function SourcingSection() {
             </div>
 
             {/* Bottom Cards Section */}
-            <div className="max-w-6xl mx-auto mt-8 grid md:grid-cols-2 gap-6  p-6 rounded-lg">
+            <div className="max-w-6xl mx-auto mt-8 grid md:grid-cols-2 gap-6   rounded-lg">
                 {
                     datas.map((data, index) => (
                         <div key={index} className="p-6 bg-[#E3F2FD]">

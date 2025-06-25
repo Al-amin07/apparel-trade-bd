@@ -1,7 +1,8 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
-import bgImg from '@/assets/header/pexels-bohlemedia-1884583.jpg'
+import bgImg1 from '@/assets/header/pexels-bohlemedia-1884583.jpg'
+import bgImg2 from '@/assets/header/pexels-nietjuhart-934070.jpg'
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Mousewheel, Autoplay } from 'swiper/modules';
@@ -73,9 +74,9 @@ export default function ImageHero() {
                 <SwiperSlide className=" ">
                     <section
                         className="relative bg-cover bg-center bg-no-repeat h-[700px] flex items-center justify-center"
-                        style={{ backgroundImage: `url("${bgImg}")` }} // replace with your actual image path
+                    // replace with your actual image path
                     >
-                        <Image src={bgImg} alt='logo' className='w-full absolute inset-0 h-full' />
+                        <Image src={bgImg1} alt='logo' className='w-full absolute inset-0 h-full' />
                         {/* Overlay */}
                         <div className="absolute inset-0 bg-black/35"></div>
 
@@ -116,9 +117,9 @@ export default function ImageHero() {
                 <SwiperSlide className="">
                     <section
                         className="relative bg-cover bg-center bg-no-repeat h-[700px] flex items-center justify-center"
-                        style={{ backgroundImage: `url("${bgImg}")` }} // replace with your actual image path
+                    // replace with your actual image path
                     >
-                        <Image src={bgImg} alt='logo' className='w-full absolute inset-0 h-full' />
+                        <Image src={bgImg2} alt='logo' className='w-full absolute inset-0 h-full' />
                         {/* Overlay */}
                         <div className="absolute inset-0 bg-black/35"></div>
 
@@ -127,7 +128,7 @@ export default function ImageHero() {
                             <h1 className="text-4xl md:text-5xl font-medium leading-tight">
                                 {/* Premier Sourcing <br /> Solutions for <br /> Fashion Brands */}
                                 Premier Sourcing Solutions <br />
-                                Of <br />
+                                For <br />
                                 Retail Apparel and Fashion Industry
 
                             </h1>

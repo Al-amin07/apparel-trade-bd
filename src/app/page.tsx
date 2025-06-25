@@ -1,4 +1,5 @@
 import ImageHero from "@/components/header/ImageHero";
+import AboutUs from "@/components/pages/home/AboutUs";
 import CertificationSection from "@/components/pages/home/CertificateSection";
 import GetInTouch from "@/components/pages/home/GetInTouch";
 import OurCustomer from "@/components/pages/home/OurCustomer";
@@ -13,7 +14,9 @@ export default function Home() {
       {/* <VideoHero /> */}
       <ImageHero />
       <SourcingSection />
+      <AboutUs />
       <Sourcing />
+
       <OurCustomer />
       <CertificationSection />
       <GetInTouch />
