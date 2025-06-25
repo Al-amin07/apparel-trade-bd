@@ -34,11 +34,11 @@ export default function Footer() {
                         <input
                             type="email"
                             placeholder="Your email for inquiries"
-                            className="w-full mb-3 px-4 py-2 rounded bg-white text-black"
+                            className="w-full mb-3 px-4 py-2 rounded-full bg-white text-black"
                         />
                         <button
                             type="submit"
-                            className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-full font-medium transition"
+                            className="w-full bg-primary hover:bg-blue-600 text-white py-2 rounded-full font-medium transition"
                         >
                             Submit your request now
                         </button>

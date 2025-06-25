@@ -21,15 +21,15 @@ export default function SourcingSection() {
                 </div>
                 <div className="flex-1">
                     <p className=" text-gray-600 w-full md:w-2/3 ">
-                        Bridging the gap between global brands and reliable suppliers in fashion, accessories, and home goods.
+                        Apparel Trade Bangladesh connects global fashion brands with trusted apparel, accessories, and home textile suppliers across Bangladesh; your reliable sourcing partner for quality, compliance, and value.
                     </p>
                     <div className='flex  md:gap-12 mt-12 gap-6'>
                         <div>
-                            <p className="text-4xl font-semibold text-primary">150+</p>
+                            <p className="text-4xl font-semibold text-primary">99+</p>
                             <p className="text-gray-700">Trusted Partnerships</p>
                         </div>
                         <div>
-                            <p className="text-4xl font-semibold text-primary">25+</p>
+                            <p className="text-4xl font-semibold text-primary">12+</p>
                             <p className="text-gray-700">Years Experience</p>
                         </div>
                     </div>
