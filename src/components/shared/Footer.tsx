@@ -2,7 +2,7 @@
 import { interProducts } from '@/constant/product.data';
 import Link from 'next/link';
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaTiktok, FaXTwitter } from 'react-icons/fa6';
+import { FaFacebookF, FaInstagram } from 'react-icons/fa6';
 
 export default function Footer() {
     return (
@@ -10,15 +10,15 @@ export default function Footer() {
             <div className="max-w-6xl mx-auto grid md:grid-cols-4 ">
                 {/* Left */}
                 <div>
-                    <h4 className="text-lg font-semibold mb-2">Sourcing</h4>
+                    <h4 className="text-lg font-semibold mb-2">APPAREL TRADE BD.
+                    </h4>
                     <p className="text-sm mb-4">
-                        Bridging fashion brands with reliable <br className='hidden md:block' /> suppliers globally.
+                        Bridging global fashion brands with trusted <br /> Bangladeshi suppliers and world-class excellence
                     </p>
                     <div className="flex space-x-4 text-xl">
                         <FaFacebookF />
                         <FaInstagram />
-                        <FaTiktok />
-                        <FaXTwitter />
+
                     </div>
                 </div>
                 <div>
@@ -59,8 +59,8 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="max-w-6xl mx-auto text-sm mt-10 text-gray-300">
-                © 2024. All rights reserved.
+            <div className="max-w-6xl mx-auto text-sm text-center mt-10 text-gray-300">
+                © APPAREL TRADE BD. All Rights Reserved. | Manufactured in Bangladesh. Crafted for global brands.
             </div>
         </footer>
     );

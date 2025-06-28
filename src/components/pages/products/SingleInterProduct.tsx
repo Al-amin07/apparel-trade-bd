@@ -11,23 +11,23 @@ export default function SingleInterProduct({ product }: { product: IInterProduct
 
         </div>
         <div className="grid lg:grid-cols-3 items-center bg-[#EEEDED] py-12 px-20 gap-8">
-          <div className=" p-5 max-h-[250px] group cursor-pointer shadow-lg rounded-md shadow-black/30 hover:bg-orange-600 hover:text-white transition-all duration-300 ">
-            <div className='border-2 rounded-md border-orange-600 inline-block  transition-all duration-300 group-hover:border-white p-2'>
-              <FiArrowDownRight className="text-orange-600 group-hover:text-white" size={24} />
+          <div className=" p-5  group cursor-pointer shadow-lg rounded-md shadow-black/30 hover:bg-primary hover:text-white transition-all duration-300 ">
+            <div className='border-2 rounded-md border-primary inline-block  transition-all duration-300 group-hover:border-white p-2'>
+              <FiArrowDownRight className="text-primary group-hover:text-white" size={24} />
             </div>
             <div>
               <h2 className="text-2xl font-semibold my-4">{product.name}</h2>
               <p className="">{product.description}</p>
             </div>
           </div>
-          <div className='flex `border lg:col-span-2 items-center justify-center'>
-            <div className="relative left-16">
-              <Image src={product.img2} alt="Product image" className="w-full h-[360px] object-cover" />
-            </div>
-            <div className="">
-              <Image src={product.img2} alt="Product image" className="w-full h-[400px] object-cover" />
-            </div>
+
+          <div className="">
+            <Image src={product.img2} width={500} height={500} alt="Product image" className="w-full h-[350px] object-cover" />
           </div>
+          <div className="">
+            <Image src={product.img2} width={500} height={500} alt="Product image" className="w-full h-[350px] object-cover" />
+          </div>
+
         </div>
       </div>
     </div>

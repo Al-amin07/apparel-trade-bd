@@ -1,8 +1,8 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
-import bgImg1 from '@/assets/header/pexels-bohlemedia-1884583.jpg'
-import bgImg2 from '@/assets/header/pexels-nietjuhart-934070.jpg'
+import bgImg1 from '@/assets/header/1.jpg'
+import bgImg2 from '@/assets/header/2.jpg'
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Mousewheel, Autoplay } from 'swiper/modules';
@@ -38,7 +38,7 @@ export default function ImageHero() {
                     >
                         <Image src={bgImg1} alt='logo' className='w-full absolute inset-0 h-full' />
                         {/* Overlay */}
-                        <div className="absolute inset-0 bg-black/35"></div>
+                        {/* <div className="absolute inset-0 bg-black/25"></div> */}
 
                         {/* Content */}
                         <div className="relative z-10 text-center text-white px-4">
@@ -81,7 +81,7 @@ export default function ImageHero() {
                     >
                         <Image src={bgImg2} alt='logo' className='w-full absolute inset-0 h-full' />
                         {/* Overlay */}
-                        <div className="absolute inset-0 bg-black/35"></div>
+                        {/* <div className="absolute inset-0 bg-black/35"></div> */}
 
                         {/* Content */}
                         <div className="relative z-10 text-center text-white px-4">
