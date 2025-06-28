@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import AnimationProvider from "@/components/provider/AnimationProvider";
+import FloatingChatFAB from "@/components/shared/FloatingChartFAB";
 // import { NavigationMenuDemo } from "@/components/shared/NavigationMenu";
 
 const geistSans = Geist({
@@ -39,6 +40,7 @@ export default function RootLayout({
           </main>
         </AnimationProvider>
         <Footer />
+        <FloatingChatFAB />
       </body>
     </html>
   );

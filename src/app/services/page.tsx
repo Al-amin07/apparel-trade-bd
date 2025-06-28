@@ -10,6 +10,7 @@ import img4 from '@/assets/service/4.avif'
 import img5 from '@/assets/service/5.avif'
 import img6 from '@/assets/service/6.avif'
 import img7 from '@/assets/service/7.avif'
+import ServiceImageSection from "@/components/pages/service/ServiceImage"
 const features = [
     {
         title: "Strategic Partnerships",
@@ -175,6 +176,7 @@ export default function OurServices() {
                     </div>
                 </div>
             </section>
+            <ServiceImageSection />
         </div>
     )
 }

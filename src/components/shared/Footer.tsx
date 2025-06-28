@@ -1,11 +1,17 @@
 
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTiktok, FaXTwitter } from 'react-icons/fa6';
-
+const products = [
+    { label: "Knitwear", href: "/knitwear" },
+    { label: "Woven", href: "/woven" },
+    { label: "Sweaters", href: "/sweaters" },
+    { label: "Headware", href: "/Headware" },
+    { label: "Home Textile", href: "/home-textile" },
+]
 export default function Footer() {
     return (
         <footer className="bg-black/90 text-white py-10 px-4">
-            <div className="max-w-6xl mx-auto grid md:grid-cols-3 ">
+            <div className="max-w-6xl mx-auto grid md:grid-cols-4 ">
                 {/* Left */}
                 <div>
                     <h4 className="text-lg font-semibold mb-2">Sourcing</h4>
@@ -19,7 +25,18 @@ export default function Footer() {
                         <FaXTwitter />
                     </div>
                 </div>
-
+                <div>
+                    <h4 className="text-sm font-semibold mb-1 uppercase">Our Products</h4>
+                    <ul>{
+                        products.map((product) => (
+                            <li key={product.label} className="mb-1">
+                                <a href={product.href} className="text-sm hover:text-primary transition">
+                                    {product.label}
+                                </a>
+                            </li>
+                        ))
+                    }</ul>
+                </div>
                 {/* Middle */}
                 <div>
                     <h4 className="text-sm font-semibold mb-1 uppercase">Head Office</h4>
