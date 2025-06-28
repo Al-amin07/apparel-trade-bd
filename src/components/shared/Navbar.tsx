@@ -18,7 +18,7 @@ export default function Navbar() {
     const pathname = usePathname();
     console.log('Current Pathname:', pathname);
     return (
-        <nav className=" bg-white shadow-lg py-4 px-4 md:px-0 md:py-0 fixed top-0 w-full z-20  dark:bg-gray-800">
+        <nav className=" bg-white shadow-lg py-4 px-4 md:px-0 md:py-0 fixed top-0 w-full z-40  dark:bg-gray-800">
             <div className="max-w-6xl  mx-auto md:flex md:justify-between md:items-center">
                 <div className="flex items-center justify-between">
                     <Link href="/" className='font-bold bg-white border-black py-3 px-3 text-center text-lg border-4 relative z-30 top-5 uppercase'>
