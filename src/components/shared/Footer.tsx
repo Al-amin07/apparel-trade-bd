@@ -1,13 +1,9 @@
 
+import { interProducts } from '@/constant/product.data';
+import Link from 'next/link';
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTiktok, FaXTwitter } from 'react-icons/fa6';
-const products = [
-    { label: "Knitwear", href: "/knitwear" },
-    { label: "Woven", href: "/woven" },
-    { label: "Sweaters", href: "/sweaters" },
-    { label: "Headware", href: "/Headware" },
-    { label: "Home Textile", href: "/home-textile" },
-]
+
 export default function Footer() {
     return (
         <footer className="bg-black/90 text-white py-10 px-4">
@@ -28,11 +24,11 @@ export default function Footer() {
                 <div>
                     <h4 className="text-sm font-semibold mb-1 uppercase">Our Products</h4>
                     <ul>{
-                        products.map((product) => (
-                            <li key={product.label} className="mb-1">
-                                <a href={product.href} className="text-sm hover:text-primary transition">
-                                    {product.label}
-                                </a>
+                        interProducts.map((product) => (
+                            <li key={product.name} className="mb-1">
+                                <Link href={`/products/international#${product.name}`} className="text-sm hover:text-primary transition">
+                                    {product.name}
+                                </Link>
                             </li>
                         ))
                     }</ul>

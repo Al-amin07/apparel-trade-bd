@@ -4,7 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import AnimationProvider from "@/components/provider/AnimationProvider";
-import FloatingChatFAB from "@/components/shared/FloatingChartFAB";
+// import FloatingChatFAB from "@/components/shared/FloatingChartFAB";
+import { FloatingButton } from "@/components/shared/FloatingButton";
 // import { NavigationMenuDemo } from "@/components/shared/NavigationMenu";
 
 const geistSans = Geist({
@@ -30,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} font-sarif antialiased`}
       >
         <Navbar />
 
@@ -40,7 +41,8 @@ export default function RootLayout({
           </main>
         </AnimationProvider>
         <Footer />
-        <FloatingChatFAB />
+        {/* <FloatingChatFAB /> */}
+        <FloatingButton />
       </body>
     </html>
   );

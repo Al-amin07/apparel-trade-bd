@@ -6,11 +6,13 @@ import img4 from '@/assets/New folder/4.avif'
 import img5 from '@/assets/New folder/5.avif'
 import Sample from "@/components/pages/about/Sample";
 import FAQSection from "@/components/pages/about/FaqSection";
+import AboutUs from "@/components/pages/home/AboutUs";
 export default function AboutPage() {
     return (
         <div className="   px-5 md:px-0 py-10">
             <div className="max-w-7xl mx-auto">
-                {/* Hero Section */}
+
+                <AboutUs />
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                     <div data-aos="fade-up">
                         <h1 className="text-3xl md:text-5xl font-bold text-blue-900 mb-4">
@@ -56,7 +58,7 @@ export default function AboutPage() {
             <FAQSection />
 
             {/* Fashion Sourcing Section */}
-            <div className="mt-24">
+            <div className="mt-24 max-w-7xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4"> Fashion Sourcing</h2>
                     <p className="text-lg text-gray-600 max-w-lg mx-auto">

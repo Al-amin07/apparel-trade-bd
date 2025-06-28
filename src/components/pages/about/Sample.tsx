@@ -38,7 +38,7 @@ const Sample = () => {
         <div className="  font-inter mt-20">
             <div className="max-w-6xl mx-auto py-8">
                 {/* Section Title */}
-                <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Our Featured Items</h2>
+                <h2 className="text-4xl font-semibold md:text-5xl text-center mb-12 text-gray-800">Ask For Samples</h2>
 
                 {/* Items Container */}
                 <div className="space-y-24">
@@ -67,7 +67,7 @@ const Sample = () => {
                                 </div>
 
                                 {/* Text content element */}
-                                <div className={`w-full max-w-lg p-16 bg-white relative top-12 ${`${!isEven ? 'md:left-16' : 'md:right-16'}`} z-20 shadow-md md:w-1/2 text-gray-700`}>
+                                <div className={`w-full max-w-lg p-16 bg-white relative top-12 ${`${!isEven ? 'md:left-16' : 'md:right-16'}`} z-20 shadow-md shadow-black/40 md:w-1/2 text-gray-700`}>
                                     <h3 className="text-4xl  mb-4 text-gray-800">{item.title}</h3>
                                     <p className="text-lg leading-relaxed">{item.description}</p>
                                 </div>

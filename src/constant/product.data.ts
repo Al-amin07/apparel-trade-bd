@@ -356,3 +356,53 @@ export const categoryLinks = [
   { name: "HOME" },
   { name: "HEADWEAR" },
 ];
+export interface IInterProduct {
+  name: string;
+  description: string;
+  img1: string | StaticImageData;
+  img2: string | StaticImageData;
+}
+export const interProducts: IInterProduct[] = [
+  {
+    name: "Knitwear",
+    description:
+      "Knitwear division's major products including T-shirts, Polo Shirts, Sweatshirts, Hoodies & More.",
+    img1: img1,
+    img2: img1,
+  },
+  {
+    name: "Woven",
+    description:
+      "Woven division's major products including Shirts, Pants, Shorts, Skirts, Dresses and More.",
+    img1: img1,
+    img2: img1,
+  },
+  {
+    name: "Sweaters",
+    description:
+      "Sweaters division's major products for Men, Women and Kids collection. We are one of the leading manufacturer in Bangladesh.",
+    img1: img1,
+    img2: img1,
+  },
+  {
+    name: "Headwear",
+    description:
+      "Headwear division's major products including Caps, Hats, Beanies, and other accessories.",
+    img1: img1,
+    img2: img1,
+  },
+  {
+    name: "Home Textile",
+    description:
+      "Home Textile division's major products including Bed Sheets, Curtains, Towels, and other home essentials.",
+    img1: img1,
+    img2: img1,
+  },
+  {
+    name: "Uniform",
+    description:
+      "Uniform division's major products including Corporate Uniforms, School Uniforms, Workwear, and more.",
+    img1: img1,
+    img2: img1,
+  },
+];

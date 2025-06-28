@@ -35,7 +35,7 @@ const FAQSection: React.FC = () => {
     ];
 
     return (
-        <div className="flex flex-col mt-16 md:flex-row  bg-white">
+        <div className="flex flex-col mt-16 md:flex-row-reverse  bg-white">
             {/* Left Section - Image */}
             <div className="md:w-1/2  overflow-hidden relative ">
                 <Image
