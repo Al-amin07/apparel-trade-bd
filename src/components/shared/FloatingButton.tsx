@@ -90,16 +90,7 @@ export function FloatingButton() {
                             />
                         </div>
 
-                        {/* Mobile Number Field */}
-                        <div className="relative">
-                            <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
-                            <Input
-                                type="tel"
-                                placeholder="Please enter your mobile number"
-                                className="pl-10 border-gray-200 focus:border-orange-500 focus:ring-orange-500"
-                                required
-                            />
-                        </div>
+
 
                         {/* Email Field */}
                         <div className="relative">

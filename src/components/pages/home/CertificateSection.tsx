@@ -40,21 +40,24 @@ const CertificationSection = () => {
     ];
 
     return (
-        <section className="w-full  font-inter">
+        <section className="w-full max-w-7xl mx-auto  font-inter">
             {/* Header Section */}
 
-            <h2 className="text-5xl  font-bold text-primary text-center">
-                Our Partners Certification
-            </h2>
+            <div className="text-right ">
+                <h2 className="text-5xl mb-4  font-bold text-primary ">
+                    Our Partners Certification
+                </h2>
+                <p className="max-w-2xl ml-auto text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente cum reiciendis, aliquid nulla libero et ea deserunt voluptates totam non ex ratione, dignissimos unde hic. In perspiciatis aspernatur quia earum!</p>
+            </div>
 
 
             {/* Logos Section */}
-            <div className=" py-12 px-5 md:px-8">
+            <div className=" py-12 ">
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
                     {certifications.map((cert, index) => (
                         <div
                             key={index}
-                            className="bg-white cursor-pointer border p-4 shadow-lg shadow-gray-300 rounded-md flex flex-col  items-center justify-center transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
+                            className="bg-white cursor-pointer p-4   flex flex-col  items-center justify-center transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
                         >
                             <Image
                                 src={cert.logo}
@@ -64,7 +67,7 @@ const CertificationSection = () => {
                                 height={450}
                             />
                             <h1 className=" text-lg font-semibold">{cert.name}</h1>
-                            <p className="text-sm text-gray-600 text-center mt-4">{cert.description}</p>
+                            <p className="text-xs text-gray-600 text-center mt-4">{cert.description}</p>
                         </div>
                     ))}
                 </div>
