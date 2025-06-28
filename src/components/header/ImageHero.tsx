@@ -87,13 +87,14 @@ export default function ImageHero() {
                         <div className="relative z-10 text-center text-white px-4">
                             <h1 className="text-4xl md:text-5xl font-medium leading-tight">
                                 {/* Premier Sourcing <br /> Solutions for <br /> Fashion Brands */}
-                                Premier Sourcing Solutions <br />
-                                For
-                                Retail Apparel and Fashion Industry
+
+                                Your Trusted Global & Local  <br />
+                                Partner for Sustainable Fashion
+
 
                             </h1>
                             <p className="mt-4 text-lg md:text-xl ">
-                                Connecting Global Fashion Buyers with Trusted Garment Sourcing Partners in Bangladesh.                </p>
+                                Empowering your vision with ethical sourcing, world-class quality, and transparent partnerships.                </p>
 
                             <Link href="/about">
                                 <button className="mt-6 px-8 py-3 bg-primary text-white rounded-full font-semibold hover:bg-blue-700 cursor-pointer transition">
