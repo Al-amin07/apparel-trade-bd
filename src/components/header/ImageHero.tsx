@@ -85,7 +85,7 @@ export default function ImageHero() {
                             <h1 className="text-4xl md:text-5xl font-medium leading-tight">
                                 {/* Premier Sourcing <br /> Solutions for <br /> Fashion Brands */}
                                 Premier Sourcing Solutions <br />
-                                For <br />
+                                For
                                 Retail Apparel and Fashion Industry
 
                             </h1>
@@ -128,7 +128,7 @@ export default function ImageHero() {
                             <h1 className="text-4xl md:text-5xl font-medium leading-tight">
                                 {/* Premier Sourcing <br /> Solutions for <br /> Fashion Brands */}
                                 Premier Sourcing Solutions <br />
-                                For <br />
+                                For
                                 Retail Apparel and Fashion Industry
 
                             </h1>
