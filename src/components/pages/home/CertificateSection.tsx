@@ -45,9 +45,9 @@ const CertificationSection = () => {
 
             <div className="text-right ">
                 <h2 className="text-5xl mb-4  font-bold text-primary ">
-                    Our Partners Certification
+                    Trusted Certifications & <br /> Partner Accreditations
                 </h2>
-                <p className="max-w-2xl ml-auto text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente cum reiciendis, aliquid nulla libero et ea deserunt voluptates totam non ex ratione, dignissimos unde hic. In perspiciatis aspernatur quia earum!</p>
+                <p className="max-w-2xl ml-auto text-gray-600">The certifications we hold across our supply chain, products, and ethical practices give your brand the confidence to source through trusted partners and industry-leading standards.</p>
             </div>
 
 
