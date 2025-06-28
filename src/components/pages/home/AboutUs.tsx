@@ -11,8 +11,8 @@ export default function AboutUs() {
                     src={logo}// Place the image in your public folder
                     alt="Inaya Sourcing Team Illustration"
                     width={500}
-                    height={300}
-                    className="min-w-full h-[400px]"
+                    height={500}
+                    className="min-w-full h-auto rounded-md"
                     priority
                 />
             </div>
