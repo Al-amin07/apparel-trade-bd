@@ -69,7 +69,7 @@ export default function Navbar() {
                 >
                     {
                         navLinks.map((link) => (
-                            <div key={link.name} className=" px-3 py-3   group ">
+                            <div key={link.name} className=" px-3  py-6   group  ">
                                 <Link
                                     key={link.name}
                                     href={link.href}
@@ -90,9 +90,9 @@ export default function Navbar() {
 
                                 {/* Style 3 */}
                                 {
-                                    link.name === 'Products' && <div className="absolute pl-24 top-full -left-[24%]  -translate-x-1/2 hidden group-hover:flex gap-28 min-w-screen justify-center bg-primary text-white shadow-xl z-40 animate-fade-in py-6 px-12">
-                                        <h2 className="text-xl font-bold mb-4 text-center leading-relaxed">
-                                            Serving dynamic business needs with <br /> innovative and on-trend products
+                                    link.name === 'Products' && <div className="absolute pl-4 top-[calc(100%-0px)] -left-[24%]  -translate-x-1/2 hidden group-hover:flex gap-12 min-w-screen justify-center bg-primary text-white shadow-xl z-40 animate-fade-in py-6 px-12">
+                                        <h2 className="text-xl max-w-lg font-bold mb-4 text-left leading-relaxed">
+                                            Empowering forward-thinking brands with innovative and trend-driven retail apparel and fashion industry.
                                         </h2>
                                         <ul className="space-y-2">
                                             {categoryLinks.map((item) => (

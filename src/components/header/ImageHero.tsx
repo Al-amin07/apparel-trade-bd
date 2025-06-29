@@ -34,24 +34,21 @@ export default function ImageHero() {
             >
                 <SwiperSlide className=" ">
                     <section
-                        className="relative bg-cover bg-center bg-no-repeat h-[700px] flex items-center justify-center"
-                    // replace with your actual image path
+                        className="relative bg-cover bg-center bg-no-repeat h-[700px] flex items-center justify-end"
+
                     >
                         <Image src={bgImg1} alt='logo' className='w-full absolute inset-0 h-full object-cover' />
-                        {/* Overlay */}
-                        {/* <div className="absolute inset-0 bg-black/25"></div> */}
 
-                        {/* Content */}
-                        <div className="relative z-10 text-center text-white px-4">
-                            <h1 className="text-4xl md:text-5xl font-medium leading-tight">
-                                {/* Premier Sourcing <br /> Solutions for <br /> Fashion Brands */}
-                                Premier Sourcing Solutions <br />
-                                For
-                                Retail Apparel and Fashion Industry
+
+
+                        <div className="relative  z-10 text-right text-white px-12">
+                            <h1 className="text-4xl md:text-4xl font-medium leading-tight">
+
+                                Premier sourcing for global fashion and retail brands.
 
                             </h1>
                             <p className="mt-4 text-lg md:text-xl ">
-                                Connecting Global Fashion Buyers with Trusted Garment Sourcing Partners in Bangladesh.                </p>
+                                Connecting global fashion buyers to trusted Bangladeshi partners.                </p>
 
                             <Link href="/about">
                                 <button className="mt-6 px-8 py-3 bg-primary text-white rounded-full font-semibold hover:bg-blue-700 cursor-pointer transition">
@@ -60,8 +57,8 @@ export default function ImageHero() {
                             </Link>
 
                             <div className="mt-6 text-sm tracking-wide">
-                                <div className="flex justify-center mb-1 text-white">
-                                    {/* 5 stars */}
+                                <div className="flex justify-end mb-1 text-white">
+
                                     {'★★★★★'.split('').map((star, i) => (
                                         <span key={i} className="text-yellow-500 text-lg mx-0.5">
                                             {star}
@@ -74,10 +71,11 @@ export default function ImageHero() {
                             </div>
                         </div>
                     </section>
+
                 </SwiperSlide>
                 <SwiperSlide className="">
                     <section
-                        className="relative bg-cover bg-center bg-no-repeat h-[700px] flex items-center justify-center"
+                        className="relative bg-cover bg-center bg-no-repeat h-[700px] flex items-center justify-end"
                     // replace with your actual image path
                     >
                         <Image src={bgImg2} alt='logo' className='w-full absolute inset-0 h-full object-cover' />
@@ -85,17 +83,16 @@ export default function ImageHero() {
                         {/* <div className="absolute inset-0 bg-black/35"></div> */}
 
                         {/* Content */}
-                        <div className="relative z-10 text-center text-white px-4">
-                            <h1 className="text-4xl md:text-5xl font-medium leading-tight">
+                        <div className="relative z-10 text-right text-white px-12">
+                            <h1 className="text-4xl md:text-4xl font-medium leading-tight">
                                 {/* Premier Sourcing <br /> Solutions for <br /> Fashion Brands */}
 
-                                Your Trusted Global & Local  <br />
-                                Partner for Sustainable Fashion
+                                Your Global & Local Partner in Sustainable Fashion.
 
 
                             </h1>
                             <p className="mt-4 text-lg md:text-xl ">
-                                Empowering your vision with ethical sourcing, world-class quality, and transparent partnerships.                </p>
+                                Empowering your brand through ethical sourcing and exceptional quality.                </p>
 
                             <Link href="/about">
                                 <button className="mt-6 px-8 py-3 bg-primary text-white rounded-full font-semibold hover:bg-blue-700 cursor-pointer transition">
@@ -104,7 +101,7 @@ export default function ImageHero() {
                             </Link>
 
                             <div className="mt-6 text-sm tracking-wide">
-                                <div className="flex justify-center mb-1 text-white">
+                                <div className="flex justify-end mb-1 text-white">
                                     {/* 5 stars */}
                                     {'★★★★★'.split('').map((star, i) => (
                                         <span key={i} className="text-yellow-500 text-lg mx-0.5">

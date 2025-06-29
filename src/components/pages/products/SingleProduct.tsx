@@ -6,7 +6,7 @@ import React from 'react'
 import { motion } from 'motion/react'
 export default function SingleProduct({ product }: { product: IProduct }) {
     return (
-        <div id={product.title} className="container   mx-auto bg-white/60 py-8">
+        <div id={product.title} className="container  scroll-mt-40 mx-auto bg-white/60 py-8">
             <div className="lg:col-span-1">
                 <div className="relative h-[450px] overflow-hidden">
                     <Image src={product.img} alt="Women's fashion store" fill className="object-cover" />

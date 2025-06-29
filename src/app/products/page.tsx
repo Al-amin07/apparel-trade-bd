@@ -16,7 +16,7 @@ export default function ProductsPage() {
         <div className="min-h-screen mt-24 relative ">
             <CardItems />
             {/* Hero Section */}
-            <div className="relative">
+            <div className="relative ">
                 <div className="relative h-[400px] overflow-hidden">
                     <Image src={bg} alt="Fashion hero image" fill className="object-cover" priority />
                     <div className="absolute inset-0 bg-black/20" />
@@ -25,7 +25,8 @@ export default function ProductsPage() {
                 {/* Navigation */}
 
             </div>
-            <div className="sticky shadow-md top-30 bg-[#F1F0E9] z-10 bottom-0 left-0 right-0  ">
+
+            <div className="sticky shadow-md top-32 bg-[#F1F0E9] z-10 bottom-0 left-0 right-0  ">
                 <div className="container mx-auto ">
                     <nav className="flex items-center justify-center space-x-8 py-4 ">
                         <div className="flex items-center space-x-2 text-gray-800 font-medium">
@@ -48,7 +49,8 @@ export default function ProductsPage() {
                     </nav>
                 </div>
             </div>
-            <div className="mt-8">
+            <div className="">
+
                 {
                     products?.map((product, index) => <SingleProduct key={index} product={product} />)
                 }
