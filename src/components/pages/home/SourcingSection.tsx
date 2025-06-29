@@ -1,6 +1,6 @@
 
 import Image from 'next/image';
-import img1 from '@/assets/sourcing/one.avif'
+import img1 from '@/assets/header/sourcing.jpg'
 import img2 from '@/assets/sourcing/two.avif'
 import img3 from '@/assets/sourcing/three.avif'
 export default function SourcingSection() {
@@ -44,7 +44,7 @@ export default function SourcingSection() {
                     alt="Sourcing partner"
                     width={1200}
                     height={600}
-                    className="object-cover w-full h-auto"
+                    className="object-cover w-full max-h-96"
                 />
             </div>
             {/* Middle Section */}

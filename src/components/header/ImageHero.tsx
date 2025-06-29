@@ -22,6 +22,7 @@ export default function ImageHero() {
                 autoplay={{
                     delay: 5000,
                     disableOnInteraction: false,
+                    reverseDirection: true,
                 }}
                 // mousewheel={true}
                 pagination={{
@@ -36,7 +37,7 @@ export default function ImageHero() {
                         className="relative bg-cover bg-center bg-no-repeat h-[700px] flex items-center justify-center"
                     // replace with your actual image path
                     >
-                        <Image src={bgImg1} alt='logo' className='w-full absolute inset-0 h-full' />
+                        <Image src={bgImg1} alt='logo' className='w-full absolute inset-0 h-full object-cover' />
                         {/* Overlay */}
                         {/* <div className="absolute inset-0 bg-black/25"></div> */}
 
@@ -79,7 +80,7 @@ export default function ImageHero() {
                         className="relative bg-cover bg-center bg-no-repeat h-[700px] flex items-center justify-center"
                     // replace with your actual image path
                     >
-                        <Image src={bgImg2} alt='logo' className='w-full absolute inset-0 h-full' />
+                        <Image src={bgImg2} alt='logo' className='w-full absolute inset-0 h-full object-cover' />
                         {/* Overlay */}
                         {/* <div className="absolute inset-0 bg-black/35"></div> */}
 
