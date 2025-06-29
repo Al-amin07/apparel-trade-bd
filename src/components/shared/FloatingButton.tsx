@@ -8,15 +8,40 @@ import {
 import { BiSolidMessageRoundedDetail } from "react-icons/bi"
 import { IoMdClose } from "react-icons/io"
 import { Button } from "../ui/button"
-import { Mail, MessageCircle, MessageSquare, Phone, User } from "lucide-react"
+import { Mail, MessageCircle, MessageSquare, User } from "lucide-react"
 import { Input } from "../ui/input"
 import { Textarea } from "../ui/textarea"
+import { toast } from "sonner"
 
 export function FloatingButton() {
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
+        const toastId = toast.loading("Sending email...");
         // Handle form submission here
-        console.log("Form submitted")
+        const form = e.currentTarget as HTMLFormElement;
+        const name = form.fullName.value || "";
+        const email = form.email.value || "";
+
+        const message = form.message.value || "";
+        try {
+            const result = await fetch("/api/contact", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ name, email, comment: message }),
+            });
+            console.log({ result });
+            if (result?.ok) {
+                toast.success("Email send successfully. wait for response", {
+                    id: toastId,
+                });
+            } else {
+                toast.error("Failed to send email", { id: toastId });
+            }
+            form.reset();
+        } catch (error) {
+            console.log("Error sending email:", error);
+        }
+        console.log(name, email, message)
 
     }
     return (
@@ -68,12 +93,7 @@ export function FloatingButton() {
                             >
                                 <MessageSquare className="h-4 w-4" />
                             </Button>
-                            <Button
-                                size="sm"
-                                className="bg-orange-500 hover:bg-orange-600 text-white h-8 w-8 p-0 rounded-full"
-                            >
-                                <Phone className="h-4 w-4" />
-                            </Button>
+
                         </div>
                     </div>
 
@@ -84,6 +104,7 @@ export function FloatingButton() {
                             <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
                             <Input
                                 type="text"
+                                name="fullName"
                                 placeholder="Please enter your name"
                                 className="pl-10 border-gray-200 focus:border-orange-500 focus:ring-orange-500"
                                 required
@@ -97,6 +118,7 @@ export function FloatingButton() {
                             <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
                             <Input
                                 type="email"
+                                name="email"
                                 placeholder="Please enter your email address"
                                 className="pl-10 border-gray-200 focus:border-orange-500 focus:ring-orange-500"
                                 required
@@ -107,6 +129,7 @@ export function FloatingButton() {
                         <div className="relative">
                             <MessageSquare className="absolute left-3 top-3 text-gray-400 h-4 w-4" />
                             <Textarea
+                                name="message"
                                 placeholder="Please enter your message"
                                 className="pl-10 min-h-[80px] border-gray-200 focus:border-orange-500 focus:ring-orange-500 resize-none"
                                 required

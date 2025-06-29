@@ -2,6 +2,8 @@
 import React, { useEffect } from 'react'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import { Toaster } from 'sonner';
+
 export default function AnimationProvider({ children }: { children: React.ReactNode }) {
     useEffect(() => {
         AOS.init({
@@ -12,6 +14,7 @@ export default function AnimationProvider({ children }: { children: React.ReactN
     return (
         <div>
             {children}
+            <Toaster position='top-center' richColors />
         </div>
     )
 }
