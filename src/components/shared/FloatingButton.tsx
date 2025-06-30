@@ -12,6 +12,7 @@ import { Mail, MessageCircle, MessageSquare, User } from "lucide-react"
 import { Input } from "../ui/input"
 import { Textarea } from "../ui/textarea"
 import { toast } from "sonner"
+import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip"
 
 export function FloatingButton() {
     const handleSubmit = async (e: React.FormEvent) => {
@@ -48,17 +49,35 @@ export function FloatingButton() {
         <div className="">
 
             <DropdownMenu >
-                <DropdownMenuTrigger asChild className="">
 
-                    <button
+                <Tooltip>
+                    <TooltipTrigger asChild>
+                        <DropdownMenuTrigger asChild className="">
+                            <button
+
+                                className="bg-orange-600 p-2.5 rounded-full shadow-lg fixed cursor-pointer bottom-7 z-40 right-7 transition hover:scale-110"
+                                title="Chat"
+                            >
+                                <BiSolidMessageRoundedDetail className="text-white" size={26} />
+                            </button>
+                        </DropdownMenuTrigger>
+                    </TooltipTrigger>
+                    <TooltipContent side="left" >
+                        <p>We&apos;re Online! <br />
+                            How may I help you today?</p>
+                    </TooltipContent>
+
+                </Tooltip>
+
+                {/* <button
 
                         className="bg-orange-600 p-2.5 rounded-full shadow-lg fixed cursor-pointer bottom-7 z-40 right-7 transition hover:scale-110"
                         title="Chat"
                     >
                         <BiSolidMessageRoundedDetail className="text-white" size={26} />
-                    </button>
+                    </button> */}
 
-                </DropdownMenuTrigger>
+
                 <DropdownMenuContent className="w-96 border-0 mr-8 p-0" align="start">
                     <div>
                         <div className="flex py-5 px-4 items-center justify-between bg-orange-600 text-white">
@@ -82,7 +101,7 @@ export function FloatingButton() {
                             <Button
                                 size="sm"
                                 className="bg-green-500 hover:bg-green-600 text-white h-8 w-8 p-0 rounded-full"
-                                onClick={() => window.open('https://wa.me/', '_blank')}
+                                onClick={() => window.open('https://wa.me/8801718556056', '_blank')}
                             >
                                 <MessageCircle className="h-4 w-4" />
                             </Button>

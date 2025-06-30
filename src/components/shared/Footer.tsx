@@ -2,7 +2,7 @@
 import { interProducts } from '@/constant/product.data';
 import Link from 'next/link';
 import React from 'react';
-import { FaFacebookF, FaInstagram } from 'react-icons/fa6';
+import { FaFacebookF, FaLinkedin } from 'react-icons/fa6';
 
 export default function Footer() {
     return (
@@ -17,7 +17,7 @@ export default function Footer() {
                     </p>
                     <div className="flex space-x-4 text-xl">
                         <FaFacebookF />
-                        <FaInstagram />
+                        <FaLinkedin />
 
                     </div>
                 </div>
